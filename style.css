@@ -1,0 +1,152 @@
+
+body {
+  background-color: rgb(246, 237, 234);
+  
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Handjet;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+img {
+  width: 800px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+h1{
+  font-family: 'Doto';font-size: 150px;
+  text-align: center;
+  padding: 10px;
+ 
+
+}
+ 
+
+
+
+.game {
+  width: 300px;
+  height: 500px;
+  margin: 50px auto;
+  
+  
+}
+
+.game-container {
+  width: 600px; /* Width of the container */
+  height: 500px; /* Height of the container */
+  margin: 50px auto;
+  background-color: #000000; /* Black background */
+  border-radius: 25px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+/* Game wrapper inside container */
+.game-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.blockContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.blocks {
+  position: relative;
+  display: flex;
+}
+
+.blocks span 
+{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background:rgb(145, 14, 143);
+  margin: 0 5px;
+  box-shadow: 0 0 0 10px rgb(145, 14, 143);
+  animation: animate 10s linear infinite;
+  animation-iteration-count: 1;
+  top: -60px;
+  left: calc(100vw * var(--i));
+  animation-delay: calc(1s * var(--i));
+}
+
+
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100px) scale(0);
+  }
+  100% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+p{
+  text-align: center; 
+  padding: 10px;
+  font-family: 'Handjet';font-size: 30px;
+}
+
+
+
+.flexboxContainer {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+.flexItem {
+flex-basis: 100%;
+text-align: center;
+}
+
+@media screen and (max-width:991px){
+  .flexboxContainer{
+    flex-wrap: wrap;
+  }
+  .game {
+    width: 90%;
+    height: auto;
+    max-width: 300px; /* Ensures it doesn't get too big */
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Doto|Handjet' rel='stylesheet'>
+    
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!--update title of your favorite TV show/movie-->
+    <title>TETRIS</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="blockrain.css">
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="blockrain.jquery.js"></script>
+
+ 
+  </head>
+
+  
+  <body>
+    <!--update title of your favorite TV show/movie-->
+    <!--favorite movie title here-->
+
+    <div class="navbar">
+      <a id= "mainTitle" href="index.html">Tetris</a>
+      <a href="Movie.html">Movie</a>
+      <a href="Corporate.html">Corporate Pollution</a>
+    </div>
+  
+    <h1> 
+      <font color="#FF2626">T</font>
+      <font color="#FF961E">E</font>
+      <font color="#FFEC35">T</font>
+      <font color="#49F23C">R</font>
+      <font color="#5FD5FF">I</font>
+      <font color="#E05FFF">S</font>
+    </h1>
+
+
+    <div class="game-container">
+      <div class="game-wrapper">
+        <div class="game"></div>
+      </div>
+    </div>
+
+
+    <div class="blockContainer">
+        <div class="blocks">
+          <span style="--i: 0;"></span>
+          <span style="--i: 0.2;"></span>
+          <span style="--i: 0.4;"></span>
+          <span style="--i: 0.6;"></span>
+        </div>
+        
+    </div>
+
+
+    
+
+  
+     
+   
+
+     <!-- <div class="flexItem">
+          <img src="https://dapsmagic.com/wp-content/uploads/2021/01/RAYA-ONLINE-USE-217.0_074.00_0112.jpg" alt="image of raya and the last dragon">
+
+      </div>    
+-->
+     
+
+    
+    <!--update here-->
+    <!-- where to watch the movie-->
+  <!--  <p>The movie can be seen on <a href="https://www.disneyplus.com/">Disney+</a> or at your local theaters!</p>-->
+    <p> Why a website? </p>
+   <p>If you think about it, websites are the cousins of video games!<br> Websites have a user who provides input to achieve a goal: To find information</p> 
+
+<script>
+    $(document).ready(function() {
+      $('.game').blockrain({
+        theme: 'vim',
+        autoplay: false
+      });
+    });
+    
+</script>
+    
+   
+  </body>
+</html>

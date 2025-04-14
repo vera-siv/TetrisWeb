@@ -8,7 +8,7 @@ body {
   float: left;
   top: 40px;
   left: 50px;
-  width: 250px; 
+  width: 300px; 
   height: auto;
 }
 
@@ -70,6 +70,12 @@ body {
   text-align: center;
   padding: 10px;
 }*/
+
+.title {
+  font-family: 'Doto';font-size: 150px;
+  text-align: center;
+  padding: 10px;
+}
 
 
 .star_section {
@@ -178,22 +184,36 @@ body {
 
 .blocks {
   position: relative;
-  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
-.blocks span 
+/*.blocks span 
 {
-  position: relative;
+  position: absolute;
   width: 30px;
   height: 30px;
-  background:rgb(145, 14, 143);
+  background:#E05FFF;
   margin: 0 5px;
-  box-shadow: 0 0 0 10px rgb(145, 14, 143);
   animation: animate 10s linear infinite;
   animation-iteration-count: 1;
   top: -60px;
-  left: calc(100vw * var(--i));
-  animation-delay: calc(1s * var(--i));
+  left: calc(4vw * var(--i));
+  animation-delay: calc(0.5s * var(--i));
+}*/
+
+.blocks span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #E05FFF;
+  top: -60px;
+  animation: animate 10s linear infinite;
+  animation-iteration-count: 1;
+}
+
+.blocks span:nth-child(even) {
+  background:#49F23C;
 }
 
 
@@ -201,10 +221,11 @@ body {
 @keyframes animate {
   0% {
     transform: translateY(-100px) scale(0);
+    opacity: 0.6;
   }
   100% {
     transform: translateY(100vh) scale(1);
-    opacity: 1;
+    opacity: 0.9;
   }
 }
 
@@ -275,3 +296,4 @@ text-align: center;
   margin-top: 20px;
  
 }
+

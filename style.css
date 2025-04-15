@@ -2,7 +2,10 @@
 body {
   background-color: rgb(246, 237, 234);
   
+  
 }
+
+
 
 .pixel {
   float: left;
@@ -296,4 +299,83 @@ text-align: center;
   margin-top: 20px;
  
 }
+
+.sent1 {
+  font-family: 'Handjet';  
+  font-size: 34px;
+  text-align: center;
+  max-width: 800px;  
+  margin: 40px auto 0; 
+  
+}
+
+.sent2 {
+  font-family: 'Handjet';  
+  font-size: 34px;
+  text-align: center;
+  color: #FF2626;
+}
+
+.sum {
+  font-family: 'Handjet';  
+  font-size: 34px;
+  text-align: center;
+  max-width:900px;  
+  margin: 50px auto 0; 
+  padding: 50px 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+}
+
+.sent3 {
+  font-family: 'Handjet';  
+  font-size: 34px;
+  text-align: center;
+  max-width: 800px;  
+  margin: 0 auto; 
+  padding: 0 20px;
+
+}
+
+.author {
+  font-family: 'Handjet';  
+  font-size: 34px;
+  text-align: justify;
+  max-width: 1000px;
+  margin: 60px auto 0; 
+  padding: 0 20px;
+}
+
+.face {
+  max-width: 300px;
+  height: auto; 
+}
+
+.contr {
+  display: flex;
+  align-items: flex-start; 
+  gap: 5px;                
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 10px;
+}
+
+.text {
+  flex: 1;
+}
+
+.videos {
+  display: flex;        
+  gap: 20px;            
+  justify-content: center;
+}
+
+video {
+  width: 640px;   
+  height: 360px; 
+  margin: 70px auto;
+  border-radius: 10%; 
+}
+
+
 
